@@ -4,10 +4,10 @@ body {
     background-color: #f8f7ff;
 }
 
-/* Login Container */
-.login-container {
+/* Register Container */
+.register-container {
     width: 350px;
-    margin: 80px auto;
+    margin: 60px auto;
     padding: 35px;
 
     background-color: white;
@@ -18,13 +18,13 @@ body {
 }
 
 /* Heading */
-.login-container h1 {
+.register-container h1 {
     text-align: center;
     color: #252047;
     margin-bottom: 10px;
 }
 
-.login-container > p {
+.register-container > p {
     text-align: center;
     color: #666666;
     margin-bottom: 30px;
@@ -44,7 +44,7 @@ label {
 
 input {
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     border: 1px solid #dddddd;
     border-radius: 8px;
@@ -57,7 +57,7 @@ input:focus {
     border-color: #4f46a5;
 }
 
-/* Login Button */
+/* Register Button */
 button {
     padding: 12px;
 
@@ -75,23 +75,23 @@ button:hover {
     background-color: #3f378f;
 }
 
-/* Register Link */
-.login-container a {
+/* Login Link */
+.register-container a {
     color: #4f46a5;
     text-decoration: none;
     font-weight: bold;
 }
 
-.login-container a:hover {
+.register-container a:hover {
     text-decoration: underline;
 }
 
 /* Mobile */
 @media (max-width: 500px) {
 
-    .login-container {
+    .register-container {
         width: auto;
-        margin: 50px 20px;
+        margin: 40px 20px;
         padding: 30px;
     }
 }
