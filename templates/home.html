@@ -25,7 +25,6 @@
             <div class="auth-buttons">
                 <a href="{{url_for('login.login_page')}}" class="login-button">Login</a>
                 <a href="{{url_for('register.register_page')}}" class="register-button">Register</a>
-
             </div>
         </div>
     </nav>
@@ -42,11 +41,10 @@
                 with practice quizzes and progress tracking.
             </p>
 
-            <a href="#" class="start-button">Start Preparing</a>
+            <a href="{{url_for('login.login_page')}}" class="start-button">Start Preparing</a>
         </div>
 
     </section>
-
 
     <!-- Features Section -->
     <section class="features" id="features">
@@ -63,7 +61,6 @@
                 </p>
             </div>
 
-
             <div class="feature-card">
                 <div class="icon">📈</div>
                 <h3>Progress Tracking</h3>
@@ -71,7 +68,6 @@
                     Track your quiz performance and see your improvement.
                 </p>
             </div>
-
 
             <div class="feature-card">
                 <div class="icon">⚡</div>

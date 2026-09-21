@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f7ff;
+    color: #1f2937;
+}
+
+.subjects-container {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.subjects-container h1 {
+    color: #252047;
+    margin-bottom: 10px;
+}
+
+.subjects-container > p {
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.subject-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.subject-card {
+    width: 220px;
+    padding: 30px 20px;
+
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.subject-card h2 {
+    color: #4f46a5;
+    margin-bottom: 12px;
+}
+
+.subject-card p {
+    color: #666666;
+    line-height: 1.5;
+}
+
+.subject-card button {
+    margin-top: 15px;
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #4f46a5;
+    color: white;
+
+    cursor: pointer;
+}
+
+.subject-card button:hover {
+    background-color: #3f378f;
+}
+
+@media (max-width: 600px) {
+    .subjects-container {
+        padding: 40px 20px;
+    }
+
+    .subject-card {
+        width: 80%;
+    }
+}
