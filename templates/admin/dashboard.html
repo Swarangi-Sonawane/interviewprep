@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - PrepMate</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/admin/dashboard.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>PrepMate</h2>
+        <p class="admin-title">Admin Panel</p>
+        <a href="#">Dashboard</a>
+        <a href="#">Subjects</a>
+        <a href="#">Topics</a>
+        <a href="#">Questions</a>
+        <a href="#">Manage Admins</a>
+        <a href="#" class="logout">Logout</a>
+    </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="top-section">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome to PrepMate Admin Panel</p>
+        </div>
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="dashboard-card">
+                <h3>Total Students</h3>
+                <p class="card-number">0</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Total Subjects</h3>
+                <p class="card-number">0</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Total Questions</h3>
+                <p class="card-number">0</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Total Admins</h3>
+                <p class="card-number">0</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
