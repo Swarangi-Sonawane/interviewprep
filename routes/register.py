@@ -7,11 +7,13 @@ register=Blueprint("register",__name__)
 @register.route("/register",methods=["get","post"])
 def register_page():
     if request.method=="POST":
-        name=request.form["name"]
-        email=request.form["email"]
+        name=request.form["name"].strip()
+        email=request.form["email"].strip()
         password=request.form["password"]
         confirm_password=request.form["confirm_password"]
-        if password!=confirm_password:
+        if not name or not email or not password:
+            flash("Please fill all fields.")
+        elif password!=confirm_password:
             flash("password do not match")
         else:
             hashed_password=generate_password_hash(password)

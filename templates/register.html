@@ -6,8 +6,20 @@
     <title>Register - PrepMate</title>
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/register.css') }}">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/toastify-js">
+    </script>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                Toastify({text: "{{ messages[0] }}", duration: 3000, gravity: "top", position: "right"}).showToast();
+            </script>
+        {% endif %}
+    {% endwith %}
     <div class="register-container">
         <h1>Create Account</h1>
         <p>Register to start your preparation.</p>
@@ -32,5 +44,6 @@
             <a href="{{ url_for('login.login_page') }}">Login</a>
         </p>
     </div>
+    
 </body>
 </html>
